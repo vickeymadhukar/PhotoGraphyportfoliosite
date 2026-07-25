@@ -12,11 +12,13 @@ Features minimalist branding, a camera shutter metadata badge, bold typography w
 
 ### 2. Work Showcase (GSAP Parallax Grid)
 Displays a staggered grid of architectural, wedding, and portrait photography. Images enter and exit the viewport with smooth, customized parallax speed transitions utilizing GSAP ScrollTrigger.
-![Vikas Photography Work Section](images/worksection.png)
+![Vikas Photography Work Section]<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/355855e1-db04-4fe2-bf8f-545a4145394d" />
+
 
 ### 3. Services Stack (Editorial Pinning)
 A vertical stack of editorial cards mapping brand, campaign, and content creation services. The cards rise, scale, and stack on top of each other as the user scrolls down, scrubbed 1:1 with scroll position.
-![Vikas Photography Services Section](images/servicesection.png)
+![Vikas Photography Services Section]<img width="1917" height="915" alt="image" src="https://github.com/user-attachments/assets/957223f4-8b37-4560-915c-2757b9b9dad5" />
+
 
 ### 4. Interactive Contact Form (Camera-Body Interface)
 A custom-designed camera interface ("Get in Frame") incorporating:
