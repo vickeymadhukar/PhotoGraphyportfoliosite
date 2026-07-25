@@ -75,9 +75,8 @@ const SelectItem = ({ value, children, onSelect, selectedValue }) => {
     <button
       type="button"
       onClick={() => onSelect(value)}
-      className={`w-full text-left px-4 py-2.5 text-xs transition-colors hover:bg-white/10 ${
-        isSelected ? "text-[#C9B896] bg-white/5 font-semibold" : "text-[#F0ECE2]"
-      }`}
+      className={`w-full text-left px-4 py-2.5 text-xs transition-colors hover:bg-white/10 ${isSelected ? "text-[#C9B896] bg-white/5 font-semibold" : "text-[#F0ECE2]"
+        }`}
     >
       {children}
     </button>
@@ -144,7 +143,7 @@ const PopoverContent = ({ className, children, onClose }) => {
 
 const Calendar = ({ selected, onSelect }) => {
   const [currentDate, setCurrentDate] = useState(selected || new Date());
-  
+
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
 
@@ -173,12 +172,12 @@ const Calendar = ({ selected, onSelect }) => {
     days.push(<div key={`empty-${i}`} className="w-8 h-8" />);
   }
   for (let d = 1; d <= daysInMonth; d++) {
-    const isSelected = selected && 
-      selected.getDate() === d && 
-      selected.getMonth() === month && 
+    const isSelected = selected &&
+      selected.getDate() === d &&
+      selected.getMonth() === month &&
       selected.getFullYear() === year;
-    const isToday = new Date().getDate() === d && 
-      new Date().getMonth() === month && 
+    const isToday = new Date().getDate() === d &&
+      new Date().getMonth() === month &&
       new Date().getFullYear() === year;
 
     days.push(
@@ -186,10 +185,9 @@ const Calendar = ({ selected, onSelect }) => {
         key={`day-${d}`}
         type="button"
         onClick={() => selectDay(d)}
-        className={`w-8 h-8 rounded-full text-xs font-medium flex items-center justify-center transition-colors hover:bg-white/10 ${
-          isSelected ? "bg-[#C9B896] text-[#0D0D0D] hover:bg-[#C9B896]/90" : 
-          isToday ? "border border-[#C9B896] text-[#C9B896]" : "text-white"
-        }`}
+        className={`w-8 h-8 rounded-full text-xs font-medium flex items-center justify-center transition-colors hover:bg-white/10 ${isSelected ? "bg-[#C9B896] text-[#0D0D0D] hover:bg-[#C9B896]/90" :
+            isToday ? "border border-[#C9B896] text-[#C9B896]" : "text-white"
+          }`}
       >
         {d}
       </button>
